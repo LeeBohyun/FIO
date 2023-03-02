@@ -31,14 +31,14 @@ log_max_value=1
 unified_rw_reporting=1
 percentile_list=50:99:99.9:99.99:99.999
 
-[4k_randwrite_qd16_4w]
+[4k_randwrite]
 stonewall
 bs=4k
 rw=randwrite
 iodepth=4
 numjobs=4
 
-[4k_randread_qd16_4w]
+[4k_randread]
 stonewall
 bs=4k
 rw=randread
