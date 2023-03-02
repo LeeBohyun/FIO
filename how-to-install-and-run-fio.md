@@ -7,9 +7,12 @@ $ apt-get install fio
 $ fio --version
 ```
 
-2. Run FIO
+2. Write FIO script
+
 
 ```bash
+vim run-fio.sh
+
 [global]
 ioengine=libaio
 filename=/dev/nvme1n1
@@ -41,4 +44,9 @@ bs=4k
 rw=randread
 iodepth=4
 numjobs=4
+```
+
+3. Run FIO benchmark
+```bash
+ sudo fio run-fio.sh
 ```
